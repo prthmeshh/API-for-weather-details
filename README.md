@@ -1,74 +1,51 @@
-Weather Details API
-Overview
-This project provides a backend/middle-tier solution for fetching and managing historical temperature data for various cities in India. The goal is to create an interface to showcase temperature details, identify anomalies, fetch the current location, and update temperature data in the database.
 
-API Endpoints
-1. GET /temperature/{city}
-Retrieve temperature details for a specific city.
+# Weather Anomaly Detection API
 
-Parameters:
-city: Name of the city for which temperature details are requested.
-2. POST /temperature
-Submit new temperature data.
+## Project Overview
 
-Request Body:
-json
-Copy code
-{
-  "city": "CityName",
-  "date": "YYYY-MM-DD",
-  "temperature": 30.5
-}
-3. PUT /temperature/{city}/{date}
-Update temperature data for a specific city and date.
+The API developed aims to showcase temperature anomalies, provide current location information, and allow seamless data submission.
 
-Parameters:
-city: Name of the city for which temperature details are being updated.
-date: Date for which temperature details are being updated.
-Request Body:
-json
-Copy code
-{
-  "temperature": 32.0
-}
-4. UPDATE /anomalies
-Fetch anomalies in temperature changes from yesterday.
+## Core Features
 
-5. GET /current-location
-Fetch the current location.
+### 1. HTTP API Endpoints
 
-6. GET /temperature-trends
-Retrieve temperature trends for the hottest and coldest cities over the past years.
+- **GET Endpoint:** Retrieve temperature data for cities.
+- **POST Endpoint:** Submit data to update the temperature for a specific city and date.
+- **PUT Endpoint:** Update existing temperature data.
+- **DELETE Endpoint:** Remove temperature data.
 
-Installation
-Clone the repository:
+### 2. Temperature Change Visualization
 
-bash
-Copy code
-git clone https://github.com/yourusername/weather-details-api.git
-Install dependencies:
+Display temperature changes from yesterday and implement styling to emphasize anomalies for better data interpretation.
 
-bash
-Copy code
-cd weather-details-api
-npm install
-Set up the database with historical temperature data.
+### 3. Current Location Integration
 
-Configure environment variables (if necessary).
+Fetch and display real-time current location information for user convenience.
 
-Usage
-Start the server:
 
-bash
-Copy code
-npm start
-Access the API at http://localhost:3000.
 
-API Documentation
-Detailed API documentation can be found in the API Documentation file.
+## Getting Started
 
-Test Cases
-Test cases for the API can be found in the TEST_CASES.md file.
+Follow these steps to set up and run the Weather Anomaly Detection API locally.
 
-Deployment
-The application is deployed on Heroku.
+1. Clone the repository to your machine.
+   bash
+   git clone https://github.com/your-username/weather-anomaly-api.git
+   
+
+2. Navigate to the project directory.
+   bash
+   cd weather-anomaly-api
+   
+
+3. Install dependencies.
+   bash
+   npm install
+   
+
+4. Run the application.
+   bash
+   npm start
+   
+
+5. Access the API at `http://localhost:3000` and explore the available endpoints.

@@ -1,0 +1,14 @@
+REST API - JSON
+
+GET /cities -HTML Document Render
+GET /api/cities -List all cities
+
+GET /api/cities/1 - Get the city with ID 1 
+GET /api/cities/2 - Get the city with ID 2
+
+POST /api/cities - Create new city data
+
+PATCH /api/cities/1 - Edit the city data with ID 1
+
+DELETE /api/cities/1 - Delete the city data with ID 1
+

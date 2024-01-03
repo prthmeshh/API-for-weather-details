@@ -30,12 +30,12 @@ Follow these steps to set up and run the Weather Anomaly Detection API locally.
 
 1. Clone the repository to your machine.
    bash
-   git clone https://github.com/your-username/weather-anomaly-api.git
+   git clone https://github.com/prthmeshh/API-for-weather-details.git
    
 
 2. Navigate to the project directory.
    bash
-   cd weather-anomaly-api
+   cd API-for-weather-details
    
 
 3. Install dependencies.
